@@ -8,7 +8,7 @@ try:
 	from bs4 import BeautifulSoup
 except:
 	print("This program needs BeautifulSoup4 to run. Enter your password to install it.")
-	os.system('sudo python3 -m pip install BeautifulSoup4')
+	os.system('sudo pip install BeautifulSoup4')
 	try:
 		from bs4 import BeautifulSoup
 	except:
