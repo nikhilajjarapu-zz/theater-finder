@@ -1,8 +1,14 @@
 import urllib.request
 import json
-from bs4 import BeautifulSoup
 import math
 import sys
+import os
+
+try:
+	from bs4 import BeautifulSoup
+except:
+	print("This program needs BeautifulSoup4 to run. Enter your password to install it.")
+	os.system('sudo pip install bs4')
 
 try:
 	movname = input('What movie do you want to watch?: ')
