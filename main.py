@@ -9,7 +9,10 @@ try:
 except:
 	print("This program needs BeautifulSoup4 to run. Enter your password to install it.")
 	os.system('sudo pip install BeautifulSoup4')
-	from bs4 import BeautifulSoup
+	try:
+		from bs4 import BeautifulSoup
+	except:
+		from BeautifulSoup4 import BeautifulSoup
 
 try:
 	movname = input('What movie do you want to watch?: ')
